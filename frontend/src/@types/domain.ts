@@ -6,11 +6,11 @@ export type OperationalUnitType = {
 export type OilfieldType = {
   id: number;
   name: string;
-  operational_unit: string;
+  operational_unit: number;
 };
 
 export type WellType = {
   id: number;
   name: string;
-  oilfield: string;
+  oilfield: number;
 };

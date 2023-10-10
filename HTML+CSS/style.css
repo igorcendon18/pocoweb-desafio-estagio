@@ -1,1 +1,113 @@
-/* TODO: Escreva seu css aqui */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+:root {
+  --cor-primaria:  #ffffff;
+  --cor-secundaria: #29126d;
+  --cor-terciaria: #f2f5f8;
+  --cor-quaternaria: #7e868c;
+  --cor-hover: #724ae8;
+  --cor-borda: #b8b4b4;
+
+  --fonte-main: 'Lato', sans-serif ;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: var(--fonte-main);
+  background-color: var(--cor-terciaria);
+  margin-left: 215px;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor-primaria);
+  padding: 15px;
+  height: 30px;
+  border: 0.1px solid var(--cor-borda);
+  font-size: 12px;
+  font-weight: 900;
+  margin-inline-start: -15px;
+}
+
+header i{
+  font-size: 24px;
+  margin-right: 10px; 
+  margin-top: 3px;
+}
+
+.header-section {
+  display: flex;
+  margin-left: 20px;
+}
+
+.sidebar {
+  background-color: var(--cor-secundaria);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar i {
+  
+  padding-left: 15px;
+  margin-right: 10px;
+}
+
+.sidebar a {
+  color: var(--cor-primaria);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  width: 80%;
+  transition: background-color 0.2s;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: var(--cor-hover);
+  font-weight: bold;
+}
+
+.content-block {
+  background-color: var(--cor-primaria);
+  padding: 20px;
+  margin: 20px;
+  border: 0.1px solid var(--cor-borda);
+  border-radius: 15px;
+}
+
+.content-block h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.content-block h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cor-quaternaria);
+}
+
+
+
+
+
+
+
+
+
